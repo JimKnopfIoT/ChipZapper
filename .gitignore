@@ -1,0 +1,43 @@
+# --- Third-party copyrighted reference material — DO NOT redistribute (link instead) ---
+# ChipShouter schematic is "reference only", (c) NewAE. Datasheets are vendor copyright.
+ChipSHOUTER_Schematic.pdf
+*.pdf
+# (To intentionally commit one of OUR OWN generated PDFs: git add -f <file>)
+
+# --- Local-only (NOT for GitHub): German / private working docs ---
+README.de.md
+DISCLAIMER.de.md
+00_Konzept-und-Anforderungen.md
+01_PhaseA_PicoEMP-Bringup.md
+02_PhaseB_Addon-Design.md
+03_PhaseB1_OutputStage-Test.md
+
+# --- Intermediate / work-in-progress (private) — only FINISHED artifacts go public ---
+wip/
+work/
+measurements/
+*.wip.md
+# NOTE: the FINAL outputs ARE meant to be published — do NOT ignore these when ready:
+#   hardware/ (KiCad schematic, PCB layout, Gerbers), the final BOM, release firmware/docs.
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.vscode/
+.idea/
+
+# --- KiCad / EDA backups (for later hardware work) ---
+*-backups/
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.bak
+fp-info-cache
+\#auto_saved_files#
+
+# --- Python (for the future scan/control tooling) ---
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
